@@ -15,6 +15,7 @@ import person2 from "../assets/person2.png";
 import v1 from "../assets/v1.mp4";
 import v2 from "../assets/v2.mp4";
 import v3 from "../assets/v3.mp4";
+import BrandsSection from "../Components/BrandSection";
 
 const Hero = () => {
   return (
@@ -110,7 +111,7 @@ const Hero = () => {
       </div>
 </section>
 
-
+<BrandsSection/>
 
     {/* Trust Section */}
 <section className="py-16 bg-white">
