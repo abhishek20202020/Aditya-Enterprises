@@ -1,9 +1,10 @@
 import serviceBg from "../assets/product.png"; // apni image lagana
-
+import ServicesShowcase from "../Components/ServicesShowcase";
+import ServiceShowcaseSection from "../Components/ServiceShowcaseSection";
 const Services = () => {
   return (
     <>
-    <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white overflow-hidden">
+<section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white overflow-hidden">
 
       {/* Background */}
       <img
@@ -85,10 +86,137 @@ const Services = () => {
 
       </div>
 
+</section>
+
+
+{/*---------------Services showcase------*/}
+
+<ServiceShowcaseSection/>
+<ServicesShowcase/>
+
+    <section className="py-20 bg-[#f8fafc]">
+
+      <div className="max-w-6xl mx-auto px-4 md:px-8">
+
+        {/* Heading */}
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
+            हम कैसे <span className="text-[#1e3a8a]">काम करते हैं</span>
+          </h2>
+          <p className="mt-3 text-gray-600">
+            सरल प्रक्रिया के साथ तेज़ और भरोसेमंद सेवा
+          </p>
+        </div>
+
+        {/* Timeline */}
+        <div className="relative">
+
+          {/* Mobile Line */}
+          <div className="absolute left-5 top-0 bottom-0 w-[2px] bg-gray-300 md:hidden"></div>
+
+          {/* Desktop Center Line */}
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-gray-300"></div>
+
+          {/* STEP 1 */}
+          <div className="flex md:flex-row flex-col items-center mb-12">
+
+            {/* Left (Desktop only) */}
+            <div className="hidden md:block md:w-1/2 md:text-right md:pr-10">
+              <h3 className="text-xl font-semibold text-gray-800">ऑर्डर करें</h3>
+              <p className="text-gray-600 mt-2">
+                हमें कॉल करें या विजिट करें और अपनी जरूरत बताएं।
+              </p>
+            </div>
+
+            {/* Circle */}
+            <div className="w-10 h-10 bg-[#ff6b4a] text-white flex items-center justify-center rounded-full z-10 shadow my-4 md:my-0">
+              1
+            </div>
+
+            {/* Right (Mobile + spacing) */}
+            <div className="pl-16 md:pl-10 md:w-1/2">
+              <h3 className="md:hidden text-lg font-semibold text-gray-800">
+                ऑर्डर करें
+              </h3>
+              <p className="md:hidden text-gray-600 mt-2 text-sm">
+                हमें कॉल करें या विजिट करें और अपनी जरूरत बताएं।
+              </p>
+            </div>
+
+          </div>
+
+          {/* STEP 2 */}
+          <div className="flex md:flex-row flex-col items-center mb-12">
+
+            <div className="md:w-1/2"></div>
+
+            <div className="w-10 h-10 bg-[#1e3a8a] text-white flex items-center justify-center rounded-full z-10 shadow my-4 md:my-0">
+              2
+            </div>
+
+            <div className="pl-16 md:pl-10 md:w-1/2">
+              <h3 className="text-lg md:text-xl font-semibold text-gray-800">
+                सामग्री तैयार
+              </h3>
+              <p className="text-gray-600 mt-2 text-sm md:text-base">
+                हम आपके ऑर्डर के अनुसार सामग्री तैयार करते हैं।
+              </p>
+            </div>
+
+          </div>
+
+          {/* STEP 3 */}
+          <div className="flex md:flex-row flex-col items-center mb-12">
+
+            {/* Left */}
+            <div className="hidden md:block md:w-1/2 md:text-right md:pr-10">
+              <h3 className="text-xl font-semibold text-gray-800">तेज़ डिलीवरी</h3>
+              <p className="text-gray-600 mt-2">
+                समय पर और सुरक्षित डिलीवरी सुनिश्चित करते हैं।
+              </p>
+            </div>
+
+            <div className="w-10 h-10 bg-green-600 text-white flex items-center justify-center rounded-full z-10 shadow my-4 md:my-0">
+              3
+            </div>
+
+            <div className="pl-16 md:pl-10 md:w-1/2">
+              <h3 className="md:hidden text-lg font-semibold text-gray-800">
+                तेज़ डिलीवरी
+              </h3>
+              <p className="md:hidden text-gray-600 mt-2 text-sm">
+                समय पर और सुरक्षित डिलीवरी सुनिश्चित करते हैं।
+              </p>
+            </div>
+
+          </div>
+
+          {/* STEP 4 */}
+          <div className="flex md:flex-row flex-col items-center">
+
+            <div className="md:w-1/2"></div>
+
+            <div className="w-10 h-10 bg-purple-600 text-white flex items-center justify-center rounded-full z-10 shadow my-4 md:my-0">
+              4
+            </div>
+
+            <div className="pl-16 md:pl-10 md:w-1/2">
+              <h3 className="text-lg md:text-xl font-semibold text-gray-800">
+                संतुष्ट ग्राहक
+              </h3>
+              <p className="text-gray-600 mt-2 text-sm md:text-base">
+                हमारी प्राथमिकता है आपका भरोसा और संतुष्टि।
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
-
-
-
+ 
     </>
   );
 };
