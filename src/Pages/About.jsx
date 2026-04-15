@@ -77,7 +77,7 @@ const AboutHero = () => {
 
             <div>
               <h3 className="text-xl font-semibold text-gray-800">
-                प्रोपराइटर - Shailesh Kumar Singh
+                प्रोपराइटर - Shailesh Kumar
               </h3>
 
               {/* Call Button */}
