@@ -213,7 +213,7 @@ const Hero = () => {
 
     <div>
       <h3 className="text-xl font-semibold">
-        प्रोपराइटर - SHAILESH KUAMR SINGH
+        प्रोपराइटर - SHAILESH KUAMR 
       </h3>
 
       {/* Call Button */}
