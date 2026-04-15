@@ -27,6 +27,7 @@ const Footer = () => {
             <li><a href="/" className="hover:text-[#ff6b4a] transition">Home</a></li>
             <li><a href="/about" className="hover:text-[#ff6b4a] transition">About Us</a></li>
             <li><a href="/products" className="hover:text-[#ff6b4a] transition">Products</a></li>
+            <li><a href="/brands" className="hover:text-[#ff6b4a] transition">Brands</a></li>
             <li><a href="/contact" className="hover:text-[#ff6b4a] transition">Contact</a></li>
           </ul>
         </div>
@@ -82,26 +83,26 @@ const Footer = () => {
             className="flex items-center justify-center gap-2 bg-green-500 text-white px-5 py-3 rounded-md hover:bg-green-600 transition w-full md:w-fit"
           >
             <svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 32 32"
-  className="w-6 h-6"
->
-  {/* Green Circle */}
-  <circle cx="16" cy="16" r="16" fill="#25D366" />
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              className="w-6 h-6"
+            >
+              {/* Green Circle */}
+              <circle cx="16" cy="16" r="16" fill="#25D366" />
 
-  {/* White WhatsApp Shape */}
-  <path
-    fill="#fff"
-    d="M16.003 5.333c-5.9 0-10.67 4.77-10.67 10.67 0 1.88.49 3.72 1.42 5.34L5.333 26.667l5.47-1.39a10.61 10.61 0 005.2 1.33h.003c5.9 0 10.67-4.77 10.67-10.67S21.903 5.333 16.003 5.333zm0 19.467h-.003a8.8 8.8 0 01-4.49-1.22l-.32-.19-3.24.82.87-3.16-.21-.33a8.82 8.82 0 01-1.36-4.74c0-4.86 3.94-8.8 8.8-8.8 2.35 0 4.56.92 6.22 2.58a8.74 8.74 0 012.58 6.22c0 4.86-3.94 8.8-8.8 8.8zm4.82-6.52c-.26-.13-1.54-.76-1.78-.84-.24-.09-.41-.13-.59.13-.18.26-.68.84-.84 1.01-.15.17-.3.2-.56.07-.26-.13-1.1-.41-2.1-1.3-.78-.7-1.3-1.56-1.45-1.82-.15-.26-.02-.4.11-.53.12-.12.26-.3.39-.45.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.07-.13-.59-1.42-.81-1.94-.21-.5-.42-.43-.59-.44h-.5c-.17 0-.45.06-.68.32-.24.26-.9.88-.9 2.15 0 1.27.92 2.5 1.05 2.67.13.17 1.8 2.75 4.37 3.86.61.26 1.09.42 1.46.54.61.2 1.17.17 1.61.1.49-.07 1.54-.63 1.76-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.17-.5-.3z"
-  />
-</svg>
+              {/* White WhatsApp Shape */}
+              <path
+                fill="#fff"
+                d="M16.003 5.333c-5.9 0-10.67 4.77-10.67 10.67 0 1.88.49 3.72 1.42 5.34L5.333 26.667l5.47-1.39a10.61 10.61 0 005.2 1.33h.003c5.9 0 10.67-4.77 10.67-10.67S21.903 5.333 16.003 5.333zm0 19.467h-.003a8.8 8.8 0 01-4.49-1.22l-.32-.19-3.24.82.87-3.16-.21-.33a8.82 8.82 0 01-1.36-4.74c0-4.86 3.94-8.8 8.8-8.8 2.35 0 4.56.92 6.22 2.58a8.74 8.74 0 012.58 6.22c0 4.86-3.94 8.8-8.8 8.8zm4.82-6.52c-.26-.13-1.54-.76-1.78-.84-.24-.09-.41-.13-.59.13-.18.26-.68.84-.84 1.01-.15.17-.3.2-.56.07-.26-.13-1.1-.41-2.1-1.3-.78-.7-1.3-1.56-1.45-1.82-.15-.26-.02-.4.11-.53.12-.12.26-.3.39-.45.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.07-.13-.59-1.42-.81-1.94-.21-.5-.42-.43-.59-.44h-.5c-.17 0-.45.06-.68.32-.24.26-.9.88-.9 2.15 0 1.27.92 2.5 1.05 2.67.13.17 1.8 2.75 4.37 3.86.61.26 1.09.42 1.46.54.61.2 1.17.17 1.61.1.49-.07 1.54-.63 1.76-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.17-.5-.3z"
+              />
+            </svg>
 
             WhatsApp
           </a>
 
           {/* Store Locator */}
           <a
-            href="https://www.google.com/maps?q=Mahaveer+Mandir+Pirari+Pul+Bihar"
+            href="https://www.google.com/maps/place/ADITYA+ENTERPRISES/@25.8519751,84.9612428,17z/data=!3m1!4b1!4m6!3m5!1s0x39ed4d36473e5e45:0xfd4d663faee9e7b0!8m2!3d25.8519751!4d84.9612428!16s%2Fg%2F11xf9x8107?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-[#ff6b4a] text-white px-5 py-3 rounded-md hover:bg-[#e55a3c] transition mt-3 w-full md:w-fit"
