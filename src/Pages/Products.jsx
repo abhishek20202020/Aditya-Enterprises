@@ -18,33 +18,39 @@ const ProductsHero = () => {
 
   const products = [
   // Cement
-  { name: "UltraTech Cement", category: "Cement", img: "/img/cement1.jpg" },
-  { name: "ACC Cement", category: "Cement", img: "/img/cement1.jpg" },
-  { name: "Ambuja Cement", category: "Cement", img: "/img/cement1.jpg" },
+  { name: "UltraTech Cement", category: "Cement", img: "/brands/product-1.jpg" },
+  { name: "ACC Cement", category: "Cement", img: "/brands/product-2.jpg" },
+  { name: "Ambuja Cement", category: "Cement", img: "/brands/product-3.jpg" },
+  { name: "Birla Gold", category: "Cement", img: "/brands/product-4.jpg" },
+  { name: "Birla Samrat", category: "Cement", img: "/brands/product-5.jpg" },
 
   // Sand
-  { name: "River Sand", category: "Sand", img: "/img/sand1.jpg" },
-  { name: "Fine Sand", category: "Sand", img: "/img/sand2.jpg" },
+  { name: "River Sand", category: "Sand", img: "/brands/product-6.jpg" },
+  { name: "Fine Sand", category: "Sand", img: "/brands/product-7.jpg" },
 
   // Gitti
-  { name: "20mm Gitti", category: "Gitti", img: "/img/gitti1.jpg" },
-  { name: "10mm Gitti", category: "Gitti", img: "/img/gitti2.jpg" },
+  { name: "20mm Gitti", category: "Gitti", img: "/brands/product-9.jpg" },
+  { name: "10mm Gitti", category: "Gitti", img: "/brands/product-8.jpg" },
 
   // Rod
-  { name: "TMT Rod 8mm", category: "Rod", img: "/img/rod1.jpg" },
-  { name: "TMT Rod 10mm", category: "Rod", img: "/img/rod2.jpg" },
-  { name: "TMT Rod 12mm", category: "Rod", img: "/img/rod3.jpg" },
+  { name: "TMT Rod 8mm", category: "Rod", img: "/brands/product-10.jpg" },
+  { name: "TMT Rod 10mm", category: "Rod", img: "/brands/product-11.jpg" },
+  { name: "TMT Rod 12mm", category: "Rod", img: "/brands/product-12.jpg" },
+  { name: "TMT Rod 16mm", category: "Rod", img: "/brands/product-13.jpg" },
 
   // Pipes
-  { name: "PVC Pipe", category: "Pipes", img: "/img/pipe1.jpg" },
-  { name: "Drain Pipe", category: "Pipes", img: "/img/pipe2.jpg" },
+  { name: "PVC Pipe", category: "Pipes", img: "/brands/product-14.jpg" },
+  { name: "Drain Pipe", category: "Pipes", img: "/brands/product-15.jpg" },
+  { name: "Water Pipe", category: "Pipes", img: "/brands/product-19.jpg" },
+  { name: "Nal Jal Pipe", category: "Pipes", img: "/brands/product-20.jpg" },
 
   // Paint
-  { name: "Wall Paint", category: "Paint", img: "/img/paint1.jpg" },
-  { name: "Primer", category: "Paint", img: "/img/paint2.jpg" },
+  { name: "Wall Paint", category: "Paint", img: "/brands/product-16.jpg" },
+  { name: "Asian Paints", category: "Paint", img: "/brands/product-17.jpg" },
 
   // Cylinder
-  { name: "Gas Cylinder", category: "Cylinder", img: "/img/cylinder.jpg" },
+  { name: "Gas Cylinder", category: "Cylinder", img: "/brands/product-18.jpg" },
+  
 ];
 
   const filtered = products.filter((p) =>
@@ -195,12 +201,15 @@ const ProductsHero = () => {
 
         <div className="grid grid-cols-3 gap-2">
 
-          <img src="/img/cement1.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Cement")} />
-          <img src="/img/rod1.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Rod")} />
-          <img src="/img/pipe1.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Pipes")} />
-          <img src="/img/paint1.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Paint")} />
-          <img src="/img/gitti1.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Gitti")} />
-          <img src="/img/cylinder.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Cylinder")} />
+          <img src="/brands/product-1.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Cement")} />
+          <img src="/brands/product-4.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Rod")} />
+          <img src="/brands/product-6.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Pipes")} />
+          <img src="/brands/product-13.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Paint")} />
+          <img src="/brands/product-8.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Gitti")} />
+          <img src="/brands/product-10.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Cylinder")} />
+          <img src="/brands/product-16.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Cylinder")} />
+          <img src="/brands/product-15.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Cylinder")} />
+          <img src="/brands/product-18.jpg" className="h-16 object-cover rounded-md cursor-pointer hover:scale-105 transition" onClick={() => setActive("Cylinder")} />
 
         </div>
 
@@ -228,7 +237,7 @@ const ProductsHero = () => {
                 <img
                   src={item.img}
                   alt={item.name}
-                  className="w-full h-40 object-cover group-hover:scale-110 transition duration-500"
+                  className="w-full h-60 object-cover group-hover:scale-110 transition duration-500"
                 />
               </div>
 

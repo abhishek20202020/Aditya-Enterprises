@@ -3,22 +3,44 @@ import { Link } from "react-router-dom";
 
 
 const brands = [
-  { name: "Ambuja Cement", img: "/brands/ambuja.png" },
-  { name: "Asian Paints", img: "/brands/asianpaints.png" },
-  { name: "Birla A1", img: "/brands/birla.png" },
-  { name: "Bondit", img: "/brands/bondit.png" },
-  { name: "Century Ply", img: "/brands/centuryply.png" },
-  { name: "Godrej", img: "/brands/godrej.png" },
-  { name: "Greenpanel", img: "/brands/greenpanel.png" },
-  { name: "Greenstone", img: "/brands/greenstone.png" },
-  { name: "Havells", img: "/brands/havells.png" },
-  { name: "Jaquar", img: "/brands/jaquar.png" },
-  { name: "Jindal Steel", img: "/brands/jindal.png" },
-  { name: "Kajaria", img: "/brands/kajaria.png" },
-  { name: "My Home", img: "/brands/myhome.png" },
-  { name: "Somany", img: "/brands/somany.png" },
-  { name: "Tata Tiscon", img: "/brands/tata.png" },
-  { name: "Vizag Steel", img: "/brands/vizag.png" },
+  // Cement
+  
+  { name: "UltraTech Cement", img: "/brands/cement-1.jpg" },
+  { name: "ACC Cement", img: "/brands/cements-2.jpg" },
+  { name: "ACC Cement", img: "/brands/ambuja.jpg" },
+  
+  { name: "Birla Samrat", img: "/brands/Birla.jpg" },
+  { name: "Birla Gold", img: "/brands/cement-4.jpg" },
+  
+  { name: "Panther Cement", img: "/brands/cement-5.jpg" },
+
+
+  // Paints
+  { name: "Asian Paints", img: "/brands/asian.jpg" },
+  { name: "Opus Paints", img: "/brands/birla opus.jpg" },
+  { name: "Berger Paints", img: "/brands/paint-2.jpg" },
+  { name: "Nerolac Paints", img: "/brands/paint-3.jpg" },
+
+  // Pipes
+  { name: "Ashirvad Pipes", img: "/brands/pipes-1.jpg" },
+  { name: "Astral Pipes", img: "/brands/pipes-2.jpg" },
+  { name: "Supreme Pipes", img: "/brands/pipes-3.jpg" },
+  { name: "Finolex Pipes", img: "/brands/pipes-4.jpg" },
+
+  // Tiles
+  { name: "Kajaria", img: "/brands/kajariya.jpg" },
+  // { name: "Somany", img: "/brands/somany.png" },
+  // { name: "Johnson Tiles", img: "/brands/johnson.png" },
+  // { name: "Orientbell Tiles", img: "/brands/orientbell.png" },
+
+  // Steel & Hardware
+  { name: "Jindal Steel", img: "/brands/jindal-1.jpg" },
+  { name: "Tata Tiscon", img: "/brands/tata-tiscon.jpg" },
+  { name: "Magadh TMT", img: "/brands/magadh.jpg" },
+  { name: "Kamdhenu", img: "/brands/kamdhenu.jpg" },
+  { name: "Shyam Steel", img: "/brands/shyamsteel.jpg" },
+
+  
 ];
 const Brands = () => {
   return (
@@ -130,44 +152,50 @@ const Brands = () => {
 
 <section className="py-20 bg-gray-50">
 
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+  <div className="max-w-7xl mx-auto px-4 md:px-8">
 
-        {/* Heading */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
-            Popular <span className="text-[#1e3a8a]">Brands</span>
-          </h2>
+    {/* Heading */}
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
+        Popular <span className="text-[#1e3a8a]">Brands</span>
+      </h2>
+
+      <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+        हम केवल भरोसेमंद और उच्च गुणवत्ता वाले ब्रांड्स के साथ काम करते हैं
+      </p>
+    </div>
+
+    {/* Brands Grid */}
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+
+      {brands.map((brand, i) => (
+        <div
+          key={i}
+          className="group relative border border-gray-200 rounded-2xl bg-white p-6 flex items-center justify-center overflow-hidden hover:shadow-2xl transition duration-300 min-h-[150px]"
+        >
+
+          {/* Logo */}
+          <img
+            src={brand.img}
+            alt={brand.name}
+            className="h-20 md:h-24 w-auto object-contain transition duration-300 group-hover:scale-110"
+          />
+
+          {/* Hover Overlay */}
+          <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+
+            <p className="text-white text-sm md:text-base font-semibold text-center px-3">
+              {brand.name}
+            </p>
+
+          </div>
+
         </div>
+      ))}
 
-        {/* Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+    </div>
 
-          {brands.map((brand, i) => (
-            <div
-              key={i}
-              className="group relative border border-gray-200 rounded-lg bg-white p-4 flex items-center justify-center overflow-hidden hover:shadow-lg transition"
-            >
-
-              {/* Logo */}
-              <img
-                src={brand.img}
-                alt={brand.name}
-                className="h-12 object-contain transition duration-300 group-hover:scale-110"
-              />
-
-              {/* Overlay Name */}
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                <p className="text-white text-sm font-semibold text-center px-2">
-                  {brand.name}
-                </p>
-              </div>
-
-            </div>
-          ))}
-
-        </div>
-
-      </div>
+  </div>
 
 </section>
 

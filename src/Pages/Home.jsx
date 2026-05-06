@@ -15,6 +15,9 @@ import person2 from "../assets/person2.png";
 import v1 from "../assets/v1.mp4";
 import v2 from "../assets/v2.mp4";
 import v3 from "../assets/v3.mp4";
+import g10 from "../assets/g10.png";
+import g6 from "../assets/g6.png";
+
 import BrandsSection from "../Components/BrandSection";
 
 const Hero = () => {
@@ -182,6 +185,115 @@ const Hero = () => {
     </div>
 
   </div>
+</section>
+
+{/*-----------------------any seva-----------------*/}
+{/* Extra Services Section */}
+<section className="py-20 bg-gray-100">
+
+  <div className="max-w-7xl mx-auto px-4 md:px-8">
+
+    {/* Heading */}
+    <div className="text-center mb-14">
+      <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
+        हमारी <span className="text-[#ff6b4a]">अन्य सेवाएं</span>
+      </h2>
+
+      <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+        निर्माण सामग्री के साथ-साथ हम डिजिटल और घरेलू सेवाएं भी प्रदान करते हैं।
+      </p>
+    </div>
+
+    {/* Grid */}
+    <div className="grid md:grid-cols-2 gap-8">
+
+      {/* CSP Service */}
+      <div className="relative rounded-3xl overflow-hidden group shadow-lg">
+
+        {/* Background Image */}
+        <img
+          src={g6}
+          alt="CSP Service"
+          className="w-full h-[350px] object-cover group-hover:scale-110 transition duration-500"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Content */}
+        <div className="absolute inset-0 flex flex-col justify-center p-8 text-white">
+
+          <div className="mb-4">
+            <svg
+              className="w-14 h-14 text-[#ff6b4a]"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              viewBox="0 0 24 24"
+            >
+              <path d="M3 10h18M7 15h.01M11 15h2" />
+              <rect x="2" y="5" width="20" height="14" rx="2" />
+            </svg>
+          </div>
+
+          <h3 className="text-2xl md:text-3xl font-bold">
+            CSP & Banking Services
+          </h3>
+
+          <p className="mt-4 text-gray-200 leading-relaxed">
+            हमारे यहाँ पैसा निकासी, पैसा जमा, आधार बैंकिंग,
+            मिनी स्टेटमेंट और अन्य CSP सेवाएं उपलब्ध हैं।
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* Gas Service */}
+      <div className="relative rounded-3xl overflow-hidden group shadow-lg">
+
+        {/* Background Image */}
+        <img
+          src={g10}
+          alt="Gas Service"
+          className="w-full h-[350px] object-cover group-hover:scale-110 transition duration-500"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Content */}
+        <div className="absolute inset-0 flex flex-col justify-center p-8 text-white">
+
+          <div className="mb-4">
+            <svg
+              className="w-14 h-14 text-[#ff6b4a]"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 3c2 3 5 5.5 5 9a5 5 0 11-10 0c0-3.5 3-6 5-9z" />
+            </svg>
+          </div>
+
+          <h3 className="text-2xl md:text-3xl font-bold">
+            Gas Cylinder Services
+          </h3>
+
+          <p className="mt-4 text-gray-200 leading-relaxed">
+            घरेलू गैस सिलेंडर बुकिंग, रिफिल और गैस से जुड़ी
+            सेवाएं आसानी से उपलब्ध हैं।
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
     {/* About Section */}
@@ -416,6 +528,93 @@ const Hero = () => {
     </div>
 
   </div>
+</section>
+<section className="py-20 bg-gray-100">
+
+  <div className="max-w-7xl mx-auto px-4 md:px-8">
+
+    {/* Heading */}
+    <div className="text-center mb-14">
+      <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
+        हमारी <span className="text-[#ff6b4a]">मशीन एवं सेवाएं</span>
+      </h2>
+
+      <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+        आधुनिक मशीनों और बेहतर सुविधाओं के साथ हम ग्राहकों को तेज और भरोसेमंद सेवा प्रदान करते हैं।
+      </p>
+    </div>
+
+    {/* 3 Grid Layout */}
+    <div className="grid md:grid-cols-3 gap-8 items-center">
+
+      {/* Left Image */}
+      <div className="relative overflow-hidden rounded-3xl shadow-xl group">
+
+        <img
+          src="/brands/paintmachine.jpg"
+          alt="Birla Opus Primer Machine"
+          className="w-full h-[450px] object-cover group-hover:scale-110 transition duration-500"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
+
+        {/* Text */}
+        <div className="absolute bottom-6 left-6 text-white">
+          <h3 className="text-2xl font-bold">
+            Birla Opus Primer Machine
+          </h3>
+
+          <p className="mt-2 text-sm text-gray-200">
+            हाई क्वालिटी प्राइमर मिक्सिंग एवं प्रोसेसिंग मशीन
+          </p>
+        </div>
+
+      </div>
+
+      {/* Center Video */}
+      <div className="relative overflow-hidden rounded-3xl shadow-2xl bg-black">
+
+        <video
+        src="/brands/paint.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="w-full h-[450px] object-cover"
+      />
+
+      </div>
+
+      {/* Right Image */}
+      <div className="relative overflow-hidden rounded-3xl shadow-xl group">
+
+        <img
+          src="/brands/paintmachine-1.jpg"
+          alt="Primer Service"
+          className="w-full h-[450px] object-cover group-hover:scale-110 transition duration-500"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
+
+        {/* Text */}
+        <div className="absolute bottom-6 left-6 text-white">
+          <h3 className="text-2xl font-bold">
+            Fast & Reliable Service
+          </h3>
+
+          <p className="mt-2 text-sm text-gray-200">
+            तेज सेवा और बेहतरीन गुणवत्ता के साथ
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
 {/* Products Section */}

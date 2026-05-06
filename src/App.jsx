@@ -10,7 +10,7 @@ import Products from "./Pages/Products";
 import Services from "./Pages/Services";
 import Brands from "./Pages/Brands";
 import Contact from "./Pages/Contact";
-
+import Gallery from "./Pages/Gallery";
 import './App.css';
 
 function App() {
@@ -32,6 +32,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/brands" element={<Brands/>}/>
         <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer/>
     </Router>

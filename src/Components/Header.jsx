@@ -112,6 +112,31 @@ const Header = () => {
                   </svg>
                 Services
               </Link>
+              {/* Gallery */}
+                <Link
+                  to="/gallery"
+                  className={`flex items-center gap-2 ${navLink}`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-5 h-5"
+                  >
+                    {/* Frame */}
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+
+                    {/* Image */}
+                    <circle cx="8" cy="8" r="2" />
+                    <path d="M21 15l-5-5L5 21" />
+                  </svg>
+
+                  Gallery
+                </Link>
 
               {/* Contact */}
               {/* Contact - Highlighted */}
