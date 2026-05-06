@@ -432,7 +432,7 @@ const backend = import.meta.env.VITE_BACKEND_URL;
           disabled={loading}
           className="w-full bg-[#ff6b4a] text-white py-3 rounded-full font-semibold shadow-md hover:bg-[#e55a3c] transition"
         >
-          {loading ? "Sending..." : "Send Message 🚀"}
+          {loading ? "Sending..." : "Send Message "}
         </button>
 
         {/* RESPONSE */}

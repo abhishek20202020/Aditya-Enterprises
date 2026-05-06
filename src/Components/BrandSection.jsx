@@ -1,13 +1,19 @@
 import { Link } from "react-router-dom";
 
 const brands = [
-  "/brands/ambuja.png",
-  "/brands/asianpaints.png",
-  "/brands/birla.png",
-  "/brands/bondit.png",
-  "/brands/centuryply.png",
-  "/brands/godrej.png",
-  "/brands/greenpanel.png",
+  // Cement Brands
+  "/brands/Ultratech.jpg",
+  "/brands/Acc.png",
+  "/brands/Birla.jpg",
+
+  // Paint Brands
+  "/brands/birla opus.jpg",
+  "/brands/asian.jpg",
+
+  // Pipe Brands
+  "/brands/pipes-1.jpg",
+  "/brands/pipes-2.jpg",
+  "/brands/kajariya.jpg",
 ];
 
 const BrandsSection = () => {
